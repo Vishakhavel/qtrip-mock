@@ -1,0 +1,46 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.banner {
+  width: 100vw;
+  height: 50vh;
+  background-color: grey;
+  /* background-size: cover; */
+  margin-bottom: 10rem;
+}
+
+.grid-container {
+  display: grid;
+  row-gap: 50px;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #696969;
+}
+
+.banner-image {
+  width: 100%;
+  z-index: 0;
+}
