@@ -1,52 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <title>QTrip</title>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="style.css" />
-   </head>
-   <body>
-      <div class="navbar">
-         <div class="logo">QTrip</div>
-         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Reservations</a></li>
-         </ul>
-         </div>
-      </div>
-      <div class="banner">
-         <!-- <img class="banner-image" src="./images/vatican-image-2.jpeg" alt="banner-image" ></img> -->
-       <div>Welcome to QTrip
-Explore the world with fantastic places to venture around</div>
-         <input type="text" placeholder="Search a city">
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>QTrip</title>
 
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- NavBar section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ps-3">
+      <a class="navbar-brand" href="#">QTrip</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav d-flex justify-content-end w-100">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reservations</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
+    <!-- Banner Image Section -->
+    <div
+      class="
+        hero-image
+        d-flex
+        justify-content-center
+        align-items-center
+        text-white
+        flex-column
+        text-center
+      "
+    >
       <div class="container">
-       <div class="row">
-         <div class="col-lg-3 col-sm-6">1</div>
-         <div class="col-lg-3 col-sm-6">2</div>
-         <div class="col-lg-3 col-sm-6">3</div>
-         <div class="col-lg-3 col-sm-6">4</div>
-         <div class="col-lg-3 col-sm-6">5</div>
-         <div class="col-lg-3 col-sm-6">6</div>
-         <div class="col-lg-3 col-sm-6">7</div>
-         <div class="col-lg-3 col-sm-6">8</div>
-
-       </div>
+        <h1>Welcome to QTrip</h1>
+        <p class="hero-text">
+          Explore the world with fantastic places to venture around
+        </p>
+        <input type="text" placeholder="Search a city" />
       </div>
+    </div>
 
-      <footer>
-       <div class="container">
-        <a href="https://www.linkedin.com/in/vishakhavel-shanmuganathan-376b44197/" target="_blank"> Made by Vel 
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">1</div>
+        <div class="col-lg-3 col-sm-6">2</div>
+        <div class="col-lg-3 col-sm-6">3</div>
+        <div class="col-lg-3 col-sm-6">4</div>
+        <div class="col-lg-3 col-sm-6">5</div>
+        <div class="col-lg-3 col-sm-6">6</div>
+        <div class="col-lg-3 col-sm-6">7</div>
+        <div class="col-lg-3 col-sm-6">8</div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <a
+          href="https://www.linkedin.com/in/vishakhavel-shanmuganathan-376b44197/"
+          target="_blank"
+        >
+          Made by Vel
         </a>
-       </div>
-      </footer>
-   </body>
-   <script src="index.js"></script>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <!-- <script src="index.js"></script> -->
 </html>
