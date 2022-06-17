@@ -44,3 +44,8 @@ body {
   width: 100%;
   z-index: 0;
 }
+
+footer {
+  background-color: #dcdcdc;
+  align-items: center;
+}
