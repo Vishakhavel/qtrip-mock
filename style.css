@@ -1,5 +1,7 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .hero-image {
@@ -24,21 +26,12 @@ body {
   color: white;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: grid;
-  row-gap: 500px;
-  object-fit: contain;
-}
-
 .navbar,
 li {
   padding: 1px 3px;
   margin-right: 10px;
   font-weight: bold;
+  color: black;
 }
 
 footer {
@@ -47,36 +40,105 @@ footer {
 }
 
 .hero-input {
-  width: 80%;
+  width: 90%;
   /* padding: 2rem; */
   padding: 0.5rem;
+  border-radius: 1rem;
 }
 
-.city {
+.hero-image-favicon {
+  padding: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+
   /* background-color: grey; */
-  padding-right: 15 px;
-  padding-left: 15px;
+
+  /* css to insert text into the image */
+
   text-align: center;
-  border-radius: 2 rem;
-  border-color: black;
-  position: relative;
-  max-height: 100%;
-  cursor: pointer;
+  color: white;
+  /* text-transform: uppercase; */
+}
+
+.gallery-item {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
-.city img:hover {
+.gallery-item .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-item .image img {
+  /* width: 100%;
+  height: 100%; */
+
+  height: 400px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.gallery-item .image img:hover {
+  transform: rotate();
+}
+
+.white-space {
+  padding: 100px;
+}
+
+.centered {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+.image img:hover {
   -webkit-filter: brightness(50%);
   transform: scale(1.1);
 }
 
-.city img {
-  width: 100%;
-  height: 100%;
+.centered img:hover {
+  -webkit-filter: brightness(50%);
+  transform: scale(1.1);
 }
 
-.blank-space {
-  padding-top: 100px;
-  padding-bottom: 100px;
+@media (min-width: 350px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 750px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* CSS for anchor tags  */
+.image {
+  color: white;
+}
+.image a:hover {
+  color: white;
 }
