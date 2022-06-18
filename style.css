@@ -40,10 +40,16 @@ footer {
 }
 
 .hero-input {
-  width: 90%;
+  /* width: 90%; */
   /* padding: 2rem; */
-  padding: 0.5rem;
-  border-radius: 1rem;
+  /* padding: 0.5rem;
+  border-radius: 1rem; */
+
+  width: 80%;
+  height: 50px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
 }
 
 .hero-image-favicon {
