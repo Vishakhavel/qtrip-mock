@@ -59,7 +59,9 @@ footer {
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  /* grid-gap: 10px; */
+  grid-row-gap: 80px;
+  grid-column-gap: 30px;
 
   /* background-color: grey; */
 
@@ -96,7 +98,7 @@ footer {
 }
 
 .white-space {
-  padding: 100px;
+  padding: 150px;
 }
 
 .centered {
