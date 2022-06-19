@@ -271,11 +271,12 @@
 
 .footer {
   display: block;
-  height: auto;
-  background-color: #494747;
+  height: 25px;
+  background-color: GREY;
   margin-top: 117px;
   margin-bottom: 0px;
   text-align: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 499px) {
