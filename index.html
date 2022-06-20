@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>QTrip</title>
+
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -30,7 +30,9 @@
       sizes="16x16"
       href="images/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <!-- <link rel="manifest" href="images/favicon/site.webmanifest" /> -->
+    <script src="index.js" defer></script>
+    <title>QTrip</title>
   </head>
   <body>
     <!-- NavBar section -->
@@ -72,120 +74,116 @@
     </div>
 
     <div class="white-space">
-      <div class="container">
-        <div class="gallery-container">
-          <div class="gallery-item">
-            <a href="https://en.wikipedia.org/wiki/Bangalore">
-              <div class="image">
-                <img src="./images/cities/bangalore.webp" alt="" />
-                <div class="centered">
-                  <h4>bangalore</h4>
-                  <h5>100+ places</h5>
-                </div>
-              </div></a
-            >
-          </div>
-        </div>
-
-        <div class="gallery-container">
-          <div class="gallery-item">
-            <a href="https://en.wikipedia.org/wiki/Paris">
-              <div class="image">
-                <img src="./images/cities/paris.jpeg" alt="" />
-                <div class="centered">
-                  <h4>paris</h4>
-                  <h5>100+ places</h5>
-                </div>
+      <div class="container" id="location-card-container">
+        <!-- <div class="gallery-item">
+          <a href="https://en.wikipedia.org/wiki/Bangalore">
+            <div class="image">
+              <img src="./images/cities/bangalore.webp" alt="" />
+              <div class="centered">
+                <h4>bangalore</h4>
+                <h5>100+ places</h5>
               </div>
-            </a>
-          </div>
+            </div></a
+          >
         </div>
 
-        <div class="gallery-container">
-          <div class="gallery-item">
-            <a href="https://en.wikipedia.org/wiki/Kolkata">
-              <div class="image">
-                <img src="./images/cities/kolkata.jpeg" alt="" />
-                <div class="centered">
-                  <h4>kolkata</h4>
-                  <h5>100+ places</h5>
-                </div>
+        <div class="gallery-item">
+          <a href="https://en.wikipedia.org/wiki/Paris">
+            <div class="image">
+              <img src="./images/cities/paris.jpeg" alt="" />
+              <div class="centered">
+                <h4>paris</h4>
+                <h5>100+ places</h5>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
 
-        <div class="gallery-container">
-          <div class="gallery-item">
-            <a href="https://en.wikipedia.org/wiki/New_York_City"
-              ><div class="image">
-                <img src="./images/cities/newyork.webp" alt="" />
-                <div class="centered">
-                  <h4>new york</h4>
-                  <h5>100+ places</h5>
-                </div>
-              </div></a
-            >
-          </div>
-        </div>
-
-        <div class="gallery-container">
-          <div class="gallery-item">
-            <a href="https://en.wikipedia.org/wiki/Malaysia">
-              <div class="image">
-                <img src="./images/cities/malaysia.jpeg" alt="" />
-                <div class="centered">
-                  <h4>malaysia</h4>
-                  <h5>100+ places</h5>
-                </div>
+        <div class="gallery-item">
+          <a href="https://en.wikipedia.org/wiki/Kolkata">
+            <div class="image">
+              <img src="./images/cities/kolkata.jpeg" alt="" />
+              <div class="centered">
+                <h4>kolkata</h4>
+                <h5>100+ places</h5>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
 
-        <div class="gallery-container">
-          <div class="gallery-item">
-            <a href="https://en.wikipedia.org/wiki/Goa">
-              <div class="image">
-                <img src="./images/cities/Goa.jpeg" alt="" />
-                <div class="centered">
-                  <h4>goa</h4>
-                  <h5>250+ places</h5>
-                </div>
+        <div class="gallery-item">
+          <a href="https://en.wikipedia.org/wiki/New_York_City"
+            ><div class="image">
+              <img src="./images/cities/newyork.webp" alt="" />
+              <div class="centered">
+                <h4>new york</h4>
+                <h5>100+ places</h5>
               </div>
-            </a>
-          </div>
+            </div></a
+          >
         </div>
 
-        <div class="gallery-container">
-          <div class="gallery-item">
-            <a href="https://en.wikipedia.org/wiki/Bangkok">
-              <div class="image">
-                <img src="./images/cities/bangkok.jpg" alt="" />
-                <div class="centered">
-                  <h4>bangkok</h4>
-                  <h5>250+ places</h5>
-                </div>
+        <div class="gallery-item">
+          <a href="https://en.wikipedia.org/wiki/Malaysia">
+            <div class="image">
+              <img src="./images/cities/malaysia.jpeg" alt="" />
+              <div class="centered">
+                <h4>malaysia</h4>
+                <h5>100+ places</h5>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
 
-        <div class="gallery-container">
-          <div class="gallery-item">
-            <a href="https://en.wikipedia.org/wiki/Singapore">
-              <div class="image">
-                <img src="./images/cities/singapore.jpeg" alt="" />
-                <div class="centered">
-                  <h4>singapore</h4>
-                  <h5>100+ places</h5>
-                </div>
+        <div class="gallery-item">
+          <a href="https://en.wikipedia.org/wiki/Goa">
+            <div class="image">
+              <img src="./images/cities/Goa.jpeg" alt="" />
+              <div class="centered">
+                <h4>goa</h4>
+                <h5>250+ places</h5>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
+
+        <div class="gallery-item">
+          <a href="https://en.wikipedia.org/wiki/Bangkok">
+            <div class="image">
+              <img src="./images/cities/bangkok.jpg" alt="" />
+              <div class="centered">
+                <h4>bangkok</h4>
+                <h5>250+ places</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://en.wikipedia.org/wiki/Singapore">
+            <div class="image">
+              <img src="./images/cities/singapore.jpeg" alt="" />
+              <div class="centered">
+                <h4>singapore</h4>
+                <h5>100+ places</h5>
+              </div>
+            </div>
+          </a>
+        </div> -->
       </div>
     </div>
+
+    <template id="template">
+      <div class="gallery-item">
+        <a href="">
+          <div class="image">
+            <img src="" alt="" id="city-picture" />
+            <div class="centered">
+              <h4 id="city-name"></h4>
+              <h5 id="places"></h5>
+            </div></div
+        ></a></div
+    ></template>
 
     <!-- FOOTER SECTION -->
     <footer class="bg-light text-center text-lg-start">
