@@ -80,7 +80,7 @@ var locationData = [
   {
     destination: 'Delhi',
     places: 50,
-    image: 'images/cities/coorg.jpg',
+    image: 'images/cities/delhi.jpg',
     price: 70000,
   },
   {
@@ -90,19 +90,55 @@ var locationData = [
     price: 70000,
   },
 ]
-
+// selecting the template
 var locationCardTemplate = document.querySelector('#template')
-
+// selecting the container
 var locationCardContainer = document.querySelector('#location-card-container')
+// selecting input search bar
+var searchInput = document.querySelector('#search')
+
+let locations = []
+// state variable
+
+searchInput.addEventListener('input', (event) => {
+  const value = event.target.value.toLowerCase()
+  // console.log(locations)
+  locations.forEach((location) => {
+    const isVisible = location.destination.toLowerCase().startsWith(value)
+
+    // console.log(location.element)
+    location.element.classList.toggle('hide', !isVisible)
+
+    // if (isVisible) {
+    //   // console.log(location.destination + 'START WITH' + value)
+    //   // console.log(location.element)
+    //   // console.log(location.element.classList + ' before')
+    //   location.element.classList.toggle('hide', !isVisible)
+    //   // console.log(location.element.classList + ' after')
+    // } else {
+    //   console.log('ELEMENTS WHICH DONT CONTAIN INPUT')
+    //   console.log(location.destination)
+    //   console.log(location.element.classList)
+    // }
+    // console.log(isVisible + ' ' + location.destination)
+
+    // console.log(location.element.classList)
+  })
+})
+
 if (typeof card == undefined) {
   console.log('content undefined')
 } else {
   // console.log(card)
 
-  locationData.forEach((locationItem) => {
-    console.log('location item', locationItem)
+  locations = locationData.map((locationItem) => {
+    // console.log('location item', locationItem)
     // logic
-    const card = locationCardTemplate.content.cloneNode(true)
+    const card = locationCardTemplate.content.cloneNode(true).children[0]
+
+    // console.log(card)
+
+    // console.log(card.children[0])
 
     const city = card.querySelector('#city-name')
     const places = card.querySelector('#places')
@@ -112,8 +148,15 @@ if (typeof card == undefined) {
     const galleryImageTile = card.querySelector('#city-picture')
     // console.log(city)
     // console.log(places)
-    console.log(galleryImageTile)
+    // console.log(galleryImageTile)
     galleryImageTile.src = locationItem.image
     locationCardContainer.append(card)
+
+    // console.log(card)
+
+    return {
+      destination: locationItem.destination,
+      element: card,
+    }
   })
 } // end of else

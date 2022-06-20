@@ -151,3 +151,7 @@ footer {
 .image a:hover {
   color: white;
 }
+
+.hide {
+  display: none;
+}
