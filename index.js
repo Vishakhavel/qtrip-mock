@@ -26,7 +26,7 @@ var locationData = [
   {
     destination: 'Goa',
     places: 50,
-    image: 'images/cities/Goa.jpeg',
+    image: 'images/cities/goa.jpeg',
     price: 70000,
   },
   {
