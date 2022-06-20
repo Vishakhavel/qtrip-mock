@@ -41,6 +41,54 @@ var locationData = [
     image: 'images/cities/bangkok.jpg',
     price: 70000,
   },
+  {
+    destination: 'Kerela',
+    places: 50,
+    image: 'images/cities/kerela.jpg',
+    price: 70000,
+  },
+  {
+    destination: 'London',
+    places: 50,
+    image: 'images/cities/london.jpg',
+    price: 70000,
+  },
+  {
+    destination: 'Amsterdam',
+    places: 50,
+    image: 'images/cities/amsterdam.jpg',
+    price: 70000,
+  },
+  {
+    destination: 'Madrid',
+    places: 50,
+    image: 'images/cities/madrid.jpg',
+    price: 70000,
+  },
+  {
+    destination: 'Rameshwaram',
+    places: 50,
+    image: 'images/cities/rameshwaram.jpg',
+    price: 70000,
+  },
+  {
+    destination: 'Coorg',
+    places: 50,
+    image: 'images/cities/coorg.jpg',
+    price: 70000,
+  },
+  {
+    destination: 'Delhi',
+    places: 50,
+    image: 'images/cities/coorg.jpg',
+    price: 70000,
+  },
+  {
+    destination: 'Mumbai',
+    places: 50,
+    image: 'images/cities/mumbai.jpg',
+    price: 70000,
+  },
 ]
 
 var locationCardTemplate = document.querySelector('#template')
